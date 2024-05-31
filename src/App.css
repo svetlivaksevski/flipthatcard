@@ -1,3 +1,17 @@
 h1 {
-  color: aqua;
+  color: rgb(170, 170, 170);
+  display: flex;
+  justify-content: center;
+  position: sticky;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

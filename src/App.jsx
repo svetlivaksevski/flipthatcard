@@ -1,11 +1,14 @@
 import "./App.css";
+import Cards from "./components/Cards";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
-function App() {
+export default function App() {
   return (
     <>
-      <h1>Flipthatcard</h1>
+      <Header />
+      <Cards />
+      <Footer />
     </>
   );
 }
-
-export default App;
