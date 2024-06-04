@@ -1,10 +1,11 @@
-export default function Cards() {
+import { useState } from "react";
+
+export default function Cards({ flashcard }) {
+  const [flip, setFlip] = useState(false);
+
   return (
-    <div className="cards">
-      <div>Card 1</div>
-      <div>Card 2</div>
-      <div>Card 3</div>
-      <div>Card 4</div>
+    <div onClick={() => setFlip(!flip)}>
+      {flip ? flashcard.german : flashcard.english}
     </div>
   );
 }
