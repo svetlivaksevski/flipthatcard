@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <>
-      <h3>Home</h3>
-      <h3>Add a new flashcard</h3>
+      <Link to="/">Home</Link>
+      <Link to="/AddCard">Add a new flashcard</Link>
       <h3>Menu</h3>
     </>
   );
