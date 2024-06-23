@@ -3,7 +3,7 @@ import Cards from "../Cards";
 
 export default function CardsList() {
   return (
-    <div>
+    <div className="container-flashcards">
       {germanFlashcards.map((flashcard) => (
         <Cards key={flashcard.id} flashcard={flashcard} />
       ))}
